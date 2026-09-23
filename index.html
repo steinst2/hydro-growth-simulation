@@ -23,8 +23,14 @@
 <section class="panel results">
 <h2>Experiment results</h2><div id="empty" class="empty">Choose conditions and run your first experiment.</div>
 <div id="result" hidden>
-<div class="score"><div><span id="yield">0%</span><small>Predicted marketable yield</small></div><div class="meter"><i id="meter"></i></div></div>
-<div class="metrics"><div><b id="health">—</b><span>Plant health</span></div><div><b id="growth">—</b><span>Growth</span></div><div><b id="produce">—</b><span>Produce development</span></div><div><b id="reliability">—</b><span>Reliability</span></div></div>
+<div class="score"><div><span id="yield">0%</span><small>Predicted marketable yield <button class="tip" type="button" aria-label="What is predicted marketable yield?" data-tip="The model’s estimate of how much usable, harvest-quality food this crop could produce under your chosen conditions. It combines all five growing variables, so one strongly limiting condition can lower the yield.">?</button></small></div><div class="meter"><i id="meter"></i></div></div>
+<div class="metrics">
+<div><b id="health">—</b><span>Plant health <button class="tip" type="button" aria-label="What is plant health?" data-tip="Overall plant condition based mainly on water, pH, and temperature. A plant can be alive and fairly healthy without producing much usable food.">?</button></span></div>
+<div><b id="growth">—</b><span>Growth <button class="tip" type="button" aria-label="What is growth?" data-tip="How well the plant is expected to build leaves, stems, and roots. This is influenced strongly by light, sunlight, water, and temperature.">?</button></span></div>
+<div><b id="produce">—</b><span>Produce development <button class="tip" type="button" aria-label="What is produce development?" data-tip="How well the edible part of the crop is expected to develop. Good plant growth does not always mean good fruit, heads, stalks, or other harvestable produce.">?</button></span></div>
+<div><b id="reliability">—</b><span>Reliability <button class="tip" type="button" aria-label="What is reliability?" data-tip="Tracks whether you can reproduce high-yield conditions. Reach at least 90% predicted yield in three consecutive trials to demonstrate a reliable growing setup.">?</button></span></div>
+</div>
+<div id="tipbox" class="tipbox" hidden role="status"></div>
 <h3>Field observations</h3><ul id="observations"></ul>
 </div>
 </section>
